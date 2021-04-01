@@ -6,7 +6,8 @@ As http client I have locust here.
 Http is served by starlette + uvicorn
 I used also this library adapted for python 3.7 (code is embedded) https://github.com/fellowapp/asyncio-connection-pool to create a connection pool.
 
-As a result I have a high cpu usage. The signal handler _signalhandler_noop (unix_events.py) is executed continously.
+As a result I have a high cpu usage on pypy (cpython is not very well too).
+The signal handler _signalhandler_noop (unix_events.py) is executed continously.
 It affects at least mac and debian.
 
 Way to install and reproduce:
