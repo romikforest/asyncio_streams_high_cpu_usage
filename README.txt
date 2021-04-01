@@ -1,7 +1,7 @@
 This is an example of high cpu usage using asyncio streams and pool of multiple connections
 
 There is a simple server that serve socket connections and a client (that also a server for http requests)
-Client recieves http requests GET /, sends socket request to the server, recieves a fictive response and naswers that data has been recieved to the http client.
+Client recieves http requests GET /, sends socket request to the server, recieves a fictive response and answers that data has been recieved to the http client.
 As http client I have locust here.
 Http is served by starlette + uvicorn
 I used also this library adapted for python 3.7 (code is embedded) https://github.com/fellowapp/asyncio-connection-pool to create a connection pool.
